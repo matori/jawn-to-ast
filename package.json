@@ -1,0 +1,54 @@
+{
+  "name": "jawn-to-ast",
+  "version": "1.0.0",
+  "description": "Parse JAWN-FS to AST.",
+  "author": "matori <pnr.matori@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "./module/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc -b && tsc -b tsconfig.module.json",
+    "dev": "ts-node-dev --respawn dev/run.ts",
+    "perf": "ts-node dev/perf.ts",
+    "test": "mocha 'test/**/*.ts'"
+  },
+  "files": [
+    "lib/",
+    "module/",
+    "src/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matori/jawn-to-ast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matori/jawn-to-ast/issues"
+  },
+  "homepage": "https://github.com/matori/jawn-to-ast#readme",
+  "devDependencies": {
+    "@textlint/ast-tester": "^2.3.4",
+    "@types/mocha": "^8.2.1",
+    "@types/node": "^14.14.37",
+    "@types/string.prototype.matchall": "^4.0.0",
+    "@types/structured-source": "^3.0.0",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "ts-node-test-register": "^9.0.1",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "@textlint/ast-node-types": "^4.4.1",
+    "@textlint/text-to-ast": "^3.3.2",
+    "structured-source": "^3.0.2"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "keywords": [
+    "jawn",
+    "ast"
+  ]
+}

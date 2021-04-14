@@ -1,0 +1,2177 @@
+{
+  "type": "Document",
+  "raw": "《《こんにちは》》｜開発者《デベロッパー》さん。\nもう｜春《はる》ですね。\n\n《《｜新《あたら》しい｜季節《きせつ》》》はいつでも楽しいものです。\n\nそうですか、｜夏《なつ》がお好きですか。\nそちらは《《まだ先ですね》》\n\n｜秋《あき》も待ち遠しいものです。\n|冬《ふゆ》は｜《《お嫌い》》なのですね。\n｜残念｜《ざんねん》です。\n\n｜敬具《けいぐ》\n",
+  "range": [
+    0,
+    176
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 14,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Paragraph",
+      "raw": "《《こんにちは》》｜開発者《デベロッパー》さん。",
+      "range": [
+        0,
+        24
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 24
+        }
+      },
+      "children": [
+        {
+          "type": "Emphasis",
+          "raw": "《《こんにちは》》",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 9
+            }
+          },
+          "range": [
+            0,
+            9
+          ],
+          "children": [
+            {
+              "type": "Str",
+              "raw": "こんにちは",
+              "value": "こんにちは",
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 2
+                },
+                "end": {
+                  "line": 1,
+                  "column": 7
+                }
+              },
+              "range": [
+                2,
+                7
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Ruby",
+          "raw": "｜開発者《デベロッパー》",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 9
+            },
+            "end": {
+              "line": 1,
+              "column": 21
+            }
+          },
+          "range": [
+            9,
+            21
+          ],
+          "children": [
+            {
+              "type": "RubyBase",
+              "raw": "｜開発者",
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 9
+                },
+                "end": {
+                  "line": 1,
+                  "column": 13
+                }
+              },
+              "range": [
+                9,
+                13
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "開発者",
+                  "value": "開発者",
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 10
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 13
+                    }
+                  },
+                  "range": [
+                    10,
+                    13
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "《",
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 13
+                },
+                "end": {
+                  "line": 1,
+                  "column": 14
+                }
+              },
+              "range": [
+                13,
+                14
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "《",
+                  "value": "《",
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 13
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 14
+                    }
+                  },
+                  "range": [
+                    13,
+                    14
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyText",
+              "raw": "デベロッパー",
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 14
+                },
+                "end": {
+                  "line": 1,
+                  "column": 20
+                }
+              },
+              "range": [
+                14,
+                20
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "デベロッパー",
+                  "value": "デベロッパー",
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 20
+                    }
+                  },
+                  "range": [
+                    14,
+                    20
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "》",
+              "loc": {
+                "start": {
+                  "line": 1,
+                  "column": 20
+                },
+                "end": {
+                  "line": 1,
+                  "column": 21
+                }
+              },
+              "range": [
+                20,
+                21
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "》",
+                  "value": "》",
+                  "loc": {
+                    "start": {
+                      "line": 1,
+                      "column": 20
+                    },
+                    "end": {
+                      "line": 1,
+                      "column": 21
+                    }
+                  },
+                  "range": [
+                    20,
+                    21
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "さん。",
+          "value": "さん。",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 21
+            },
+            "end": {
+              "line": 1,
+              "column": 24
+            }
+          },
+          "range": [
+            21,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        24,
+        25
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 24
+        },
+        "end": {
+          "line": 1,
+          "column": 25
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "もう｜春《はる》ですね。",
+      "range": [
+        25,
+        37
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 12
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "もう",
+          "value": "もう",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 2
+            }
+          },
+          "range": [
+            25,
+            27
+          ]
+        },
+        {
+          "type": "Ruby",
+          "raw": "｜春《はる》",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 2
+            },
+            "end": {
+              "line": 2,
+              "column": 8
+            }
+          },
+          "range": [
+            27,
+            33
+          ],
+          "children": [
+            {
+              "type": "RubyBase",
+              "raw": "｜春",
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 2
+                },
+                "end": {
+                  "line": 2,
+                  "column": 4
+                }
+              },
+              "range": [
+                27,
+                29
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "春",
+                  "value": "春",
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 4
+                    }
+                  },
+                  "range": [
+                    28,
+                    29
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "《",
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 4
+                },
+                "end": {
+                  "line": 2,
+                  "column": 5
+                }
+              },
+              "range": [
+                29,
+                30
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "《",
+                  "value": "《",
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 5
+                    }
+                  },
+                  "range": [
+                    29,
+                    30
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyText",
+              "raw": "はる",
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 5
+                },
+                "end": {
+                  "line": 2,
+                  "column": 7
+                }
+              },
+              "range": [
+                30,
+                32
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "はる",
+                  "value": "はる",
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 7
+                    }
+                  },
+                  "range": [
+                    30,
+                    32
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "》",
+              "loc": {
+                "start": {
+                  "line": 2,
+                  "column": 7
+                },
+                "end": {
+                  "line": 2,
+                  "column": 8
+                }
+              },
+              "range": [
+                32,
+                33
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "》",
+                  "value": "》",
+                  "loc": {
+                    "start": {
+                      "line": 2,
+                      "column": 7
+                    },
+                    "end": {
+                      "line": 2,
+                      "column": 8
+                    }
+                  },
+                  "range": [
+                    32,
+                    33
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "ですね。",
+          "value": "ですね。",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 8
+            },
+            "end": {
+              "line": 2,
+              "column": 12
+            }
+          },
+          "range": [
+            33,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        37,
+        38
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 12
+        },
+        "end": {
+          "line": 2,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "range": [
+        38,
+        39
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "《《｜新《あたら》しい｜季節《きせつ》》》はいつでも楽しいものです。",
+      "range": [
+        39,
+        73
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 34
+        }
+      },
+      "children": [
+        {
+          "type": "Emphasis",
+          "raw": "《《｜新《あたら》しい｜季節《きせつ》》》",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 0
+            },
+            "end": {
+              "line": 4,
+              "column": 21
+            }
+          },
+          "range": [
+            39,
+            60
+          ],
+          "children": [
+            {
+              "type": "Ruby",
+              "raw": "｜新《あたら》",
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 2
+                },
+                "end": {
+                  "line": 4,
+                  "column": 9
+                }
+              },
+              "range": [
+                41,
+                48
+              ],
+              "children": [
+                {
+                  "type": "RubyBase",
+                  "raw": "｜新",
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 4
+                    }
+                  },
+                  "range": [
+                    41,
+                    43
+                  ],
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "新",
+                      "value": "新",
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 3
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 4
+                        }
+                      },
+                      "range": [
+                        42,
+                        43
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "RubyParenthesis",
+                  "raw": "《",
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 5
+                    }
+                  },
+                  "range": [
+                    43,
+                    44
+                  ],
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "《",
+                      "value": "《",
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 4
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 5
+                        }
+                      },
+                      "range": [
+                        43,
+                        44
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "RubyText",
+                  "raw": "あたら",
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 8
+                    }
+                  },
+                  "range": [
+                    44,
+                    47
+                  ],
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "あたら",
+                      "value": "あたら",
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 5
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 8
+                        }
+                      },
+                      "range": [
+                        44,
+                        47
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "RubyParenthesis",
+                  "raw": "》",
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 9
+                    }
+                  },
+                  "range": [
+                    47,
+                    48
+                  ],
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "》",
+                      "value": "》",
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 9
+                        }
+                      },
+                      "range": [
+                        47,
+                        48
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Str",
+              "raw": "しい",
+              "value": "しい",
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 2
+                },
+                "end": {
+                  "line": 4,
+                  "column": 11
+                }
+              },
+              "range": [
+                41,
+                50
+              ]
+            },
+            {
+              "type": "Ruby",
+              "raw": "｜季節《きせつ》",
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 11
+                },
+                "end": {
+                  "line": 4,
+                  "column": 19
+                }
+              },
+              "range": [
+                50,
+                58
+              ],
+              "children": [
+                {
+                  "type": "RubyBase",
+                  "raw": "｜季節",
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 14
+                    }
+                  },
+                  "range": [
+                    50,
+                    53
+                  ],
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "季節",
+                      "value": "季節",
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 12
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 14
+                        }
+                      },
+                      "range": [
+                        51,
+                        53
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "RubyParenthesis",
+                  "raw": "《",
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 14
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 15
+                    }
+                  },
+                  "range": [
+                    53,
+                    54
+                  ],
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "《",
+                      "value": "《",
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 14
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 15
+                        }
+                      },
+                      "range": [
+                        53,
+                        54
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "RubyText",
+                  "raw": "きせつ",
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 15
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 18
+                    }
+                  },
+                  "range": [
+                    54,
+                    57
+                  ],
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "きせつ",
+                      "value": "きせつ",
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 15
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 18
+                        }
+                      },
+                      "range": [
+                        54,
+                        57
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "RubyParenthesis",
+                  "raw": "》",
+                  "loc": {
+                    "start": {
+                      "line": 4,
+                      "column": 18
+                    },
+                    "end": {
+                      "line": 4,
+                      "column": 19
+                    }
+                  },
+                  "range": [
+                    57,
+                    58
+                  ],
+                  "children": [
+                    {
+                      "type": "Str",
+                      "raw": "》",
+                      "value": "》",
+                      "loc": {
+                        "start": {
+                          "line": 4,
+                          "column": 18
+                        },
+                        "end": {
+                          "line": 4,
+                          "column": 19
+                        }
+                      },
+                      "range": [
+                        57,
+                        58
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "Str",
+              "raw": "",
+              "value": "",
+              "loc": {
+                "start": {
+                  "line": 4,
+                  "column": 19
+                },
+                "end": {
+                  "line": 4,
+                  "column": 19
+                }
+              },
+              "range": [
+                58,
+                58
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "はいつでも楽しいものです。",
+          "value": "はいつでも楽しいものです。",
+          "loc": {
+            "start": {
+              "line": 4,
+              "column": 21
+            },
+            "end": {
+              "line": 4,
+              "column": 34
+            }
+          },
+          "range": [
+            60,
+            73
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        73,
+        74
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 34
+        },
+        "end": {
+          "line": 4,
+          "column": 35
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "range": [
+        74,
+        75
+      ],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "そうですか、｜夏《なつ》がお好きですか。",
+      "range": [
+        75,
+        95
+      ],
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 0
+        },
+        "end": {
+          "line": 6,
+          "column": 20
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "そうですか、",
+          "value": "そうですか、",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 0
+            },
+            "end": {
+              "line": 6,
+              "column": 6
+            }
+          },
+          "range": [
+            75,
+            81
+          ]
+        },
+        {
+          "type": "Ruby",
+          "raw": "｜夏《なつ》",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 6
+            },
+            "end": {
+              "line": 6,
+              "column": 12
+            }
+          },
+          "range": [
+            81,
+            87
+          ],
+          "children": [
+            {
+              "type": "RubyBase",
+              "raw": "｜夏",
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 6
+                },
+                "end": {
+                  "line": 6,
+                  "column": 8
+                }
+              },
+              "range": [
+                81,
+                83
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "夏",
+                  "value": "夏",
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 7
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 8
+                    }
+                  },
+                  "range": [
+                    82,
+                    83
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "《",
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 8
+                },
+                "end": {
+                  "line": 6,
+                  "column": 9
+                }
+              },
+              "range": [
+                83,
+                84
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "《",
+                  "value": "《",
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 8
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 9
+                    }
+                  },
+                  "range": [
+                    83,
+                    84
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyText",
+              "raw": "なつ",
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 9
+                },
+                "end": {
+                  "line": 6,
+                  "column": 11
+                }
+              },
+              "range": [
+                84,
+                86
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "なつ",
+                  "value": "なつ",
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 9
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 11
+                    }
+                  },
+                  "range": [
+                    84,
+                    86
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "》",
+              "loc": {
+                "start": {
+                  "line": 6,
+                  "column": 11
+                },
+                "end": {
+                  "line": 6,
+                  "column": 12
+                }
+              },
+              "range": [
+                86,
+                87
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "》",
+                  "value": "》",
+                  "loc": {
+                    "start": {
+                      "line": 6,
+                      "column": 11
+                    },
+                    "end": {
+                      "line": 6,
+                      "column": 12
+                    }
+                  },
+                  "range": [
+                    86,
+                    87
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "がお好きですか。",
+          "value": "がお好きですか。",
+          "loc": {
+            "start": {
+              "line": 6,
+              "column": 12
+            },
+            "end": {
+              "line": 6,
+              "column": 20
+            }
+          },
+          "range": [
+            87,
+            95
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        95,
+        96
+      ],
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 20
+        },
+        "end": {
+          "line": 6,
+          "column": 21
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "そちらは《《まだ先ですね》》",
+      "range": [
+        96,
+        110
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 14
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "そちらは",
+          "value": "そちらは",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 0
+            },
+            "end": {
+              "line": 7,
+              "column": 4
+            }
+          },
+          "range": [
+            96,
+            100
+          ]
+        },
+        {
+          "type": "Emphasis",
+          "raw": "《《まだ先ですね》》",
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 4
+            },
+            "end": {
+              "line": 7,
+              "column": 14
+            }
+          },
+          "range": [
+            100,
+            110
+          ],
+          "children": [
+            {
+              "type": "Str",
+              "raw": "まだ先ですね",
+              "value": "まだ先ですね",
+              "loc": {
+                "start": {
+                  "line": 7,
+                  "column": 6
+                },
+                "end": {
+                  "line": 7,
+                  "column": 12
+                }
+              },
+              "range": [
+                102,
+                108
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        110,
+        111
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 14
+        },
+        "end": {
+          "line": 7,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "range": [
+        111,
+        112
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "｜秋《あき》も待ち遠しいものです。",
+      "range": [
+        112,
+        129
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 17
+        }
+      },
+      "children": [
+        {
+          "type": "Ruby",
+          "raw": "｜秋《あき》",
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 0
+            },
+            "end": {
+              "line": 9,
+              "column": 6
+            }
+          },
+          "range": [
+            112,
+            118
+          ],
+          "children": [
+            {
+              "type": "RubyBase",
+              "raw": "｜秋",
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 0
+                },
+                "end": {
+                  "line": 9,
+                  "column": 2
+                }
+              },
+              "range": [
+                112,
+                114
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "秋",
+                  "value": "秋",
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 2
+                    }
+                  },
+                  "range": [
+                    113,
+                    114
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "《",
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 2
+                },
+                "end": {
+                  "line": 9,
+                  "column": 3
+                }
+              },
+              "range": [
+                114,
+                115
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "《",
+                  "value": "《",
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 3
+                    }
+                  },
+                  "range": [
+                    114,
+                    115
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyText",
+              "raw": "あき",
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 3
+                },
+                "end": {
+                  "line": 9,
+                  "column": 5
+                }
+              },
+              "range": [
+                115,
+                117
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "あき",
+                  "value": "あき",
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 5
+                    }
+                  },
+                  "range": [
+                    115,
+                    117
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "》",
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 5
+                },
+                "end": {
+                  "line": 9,
+                  "column": 6
+                }
+              },
+              "range": [
+                117,
+                118
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "》",
+                  "value": "》",
+                  "loc": {
+                    "start": {
+                      "line": 9,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 9,
+                      "column": 6
+                    }
+                  },
+                  "range": [
+                    117,
+                    118
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "も待ち遠しいものです。",
+          "value": "も待ち遠しいものです。",
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 6
+            },
+            "end": {
+              "line": 9,
+              "column": 17
+            }
+          },
+          "range": [
+            118,
+            129
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        129,
+        130
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 17
+        },
+        "end": {
+          "line": 9,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "|冬《ふゆ》は｜《《お嫌い》》なのですね。",
+      "range": [
+        130,
+        151
+      ],
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 21
+        }
+      },
+      "children": [
+        {
+          "type": "Ruby",
+          "raw": "|冬《ふゆ》",
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 0
+            },
+            "end": {
+              "line": 10,
+              "column": 6
+            }
+          },
+          "range": [
+            130,
+            136
+          ],
+          "children": [
+            {
+              "type": "RubyBase",
+              "raw": "|冬",
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 0
+                },
+                "end": {
+                  "line": 10,
+                  "column": 2
+                }
+              },
+              "range": [
+                130,
+                132
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "冬",
+                  "value": "冬",
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 2
+                    }
+                  },
+                  "range": [
+                    131,
+                    132
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "《",
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 2
+                },
+                "end": {
+                  "line": 10,
+                  "column": 3
+                }
+              },
+              "range": [
+                132,
+                133
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "《",
+                  "value": "《",
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 3
+                    }
+                  },
+                  "range": [
+                    132,
+                    133
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyText",
+              "raw": "ふゆ",
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 3
+                },
+                "end": {
+                  "line": 10,
+                  "column": 5
+                }
+              },
+              "range": [
+                133,
+                135
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "ふゆ",
+                  "value": "ふゆ",
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 5
+                    }
+                  },
+                  "range": [
+                    133,
+                    135
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "》",
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 5
+                },
+                "end": {
+                  "line": 10,
+                  "column": 6
+                }
+              },
+              "range": [
+                135,
+                136
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "》",
+                  "value": "》",
+                  "loc": {
+                    "start": {
+                      "line": 10,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 10,
+                      "column": 6
+                    }
+                  },
+                  "range": [
+                    135,
+                    136
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "は｜《《お嫌い》》なのですね。",
+          "value": "は《《お嫌い》》なのですね。",
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 6
+            },
+            "end": {
+              "line": 10,
+              "column": 21
+            }
+          },
+          "range": [
+            136,
+            151
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        151,
+        152
+      ],
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 21
+        },
+        "end": {
+          "line": 10,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "｜残念｜《ざんねん》です。",
+      "range": [
+        152,
+        165
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 13
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "｜残念｜《ざんねん》です。",
+          "value": "｜残念《ざんねん》です。",
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 0
+            },
+            "end": {
+              "line": 11,
+              "column": 13
+            }
+          },
+          "range": [
+            152,
+            165
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        165,
+        166
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 13
+        },
+        "end": {
+          "line": 11,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "range": [
+        166,
+        167
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "｜敬具《けいぐ》",
+      "range": [
+        167,
+        175
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 8
+        }
+      },
+      "children": [
+        {
+          "type": "Ruby",
+          "raw": "｜敬具《けいぐ》",
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 0
+            },
+            "end": {
+              "line": 13,
+              "column": 8
+            }
+          },
+          "range": [
+            167,
+            175
+          ],
+          "children": [
+            {
+              "type": "RubyBase",
+              "raw": "｜敬具",
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 0
+                },
+                "end": {
+                  "line": 13,
+                  "column": 3
+                }
+              },
+              "range": [
+                167,
+                170
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "敬具",
+                  "value": "敬具",
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 3
+                    }
+                  },
+                  "range": [
+                    168,
+                    170
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "《",
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 3
+                },
+                "end": {
+                  "line": 13,
+                  "column": 4
+                }
+              },
+              "range": [
+                170,
+                171
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "《",
+                  "value": "《",
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 4
+                    }
+                  },
+                  "range": [
+                    170,
+                    171
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyText",
+              "raw": "けいぐ",
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 4
+                },
+                "end": {
+                  "line": 13,
+                  "column": 7
+                }
+              },
+              "range": [
+                171,
+                174
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "けいぐ",
+                  "value": "けいぐ",
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 4
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 7
+                    }
+                  },
+                  "range": [
+                    171,
+                    174
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "》",
+              "loc": {
+                "start": {
+                  "line": 13,
+                  "column": 7
+                },
+                "end": {
+                  "line": 13,
+                  "column": 8
+                }
+              },
+              "range": [
+                174,
+                175
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "》",
+                  "value": "》",
+                  "loc": {
+                    "start": {
+                      "line": 13,
+                      "column": 7
+                    },
+                    "end": {
+                      "line": 13,
+                      "column": 8
+                    }
+                  },
+                  "range": [
+                    174,
+                    175
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        175,
+        176
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 8
+        },
+        "end": {
+          "line": 13,
+          "column": 9
+        }
+      }
+    }
+  ]
+}

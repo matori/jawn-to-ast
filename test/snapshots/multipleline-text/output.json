@@ -1,0 +1,175 @@
+{
+  "type": "Document",
+  "raw": "こんにちは世界。\n春夏秋冬。\n小説はお好きですか？",
+  "range": [
+    0,
+    25
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 3,
+      "column": 10
+    }
+  },
+  "children": [
+    {
+      "type": "Paragraph",
+      "raw": "こんにちは世界。",
+      "range": [
+        0,
+        8
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 8
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "こんにちは世界。",
+          "value": "こんにちは世界。",
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 1,
+              "column": 8
+            }
+          },
+          "range": [
+            0,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        8,
+        9
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 8
+        },
+        "end": {
+          "line": 1,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "春夏秋冬。",
+      "range": [
+        9,
+        14
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 5
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "春夏秋冬。",
+          "value": "春夏秋冬。",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 5
+            }
+          },
+          "range": [
+            9,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        14,
+        15
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 5
+        },
+        "end": {
+          "line": 2,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "小説はお好きですか？",
+      "range": [
+        15,
+        25
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 10
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "小説はお好きですか？",
+          "value": "小説はお好きですか？",
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 0
+            },
+            "end": {
+              "line": 3,
+              "column": 10
+            }
+          },
+          "range": [
+            15,
+            25
+          ]
+        }
+      ]
+    }
+  ]
+}
