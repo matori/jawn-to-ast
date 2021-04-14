@@ -27,6 +27,7 @@ const { parse } = require('jawn-to-ast');
 const text = '序云FSです。《《こんにちは》》｜世界《せかい》。';
 const AST = parse(text);
 
+// ASTをJSONにして出力
 console.log(JSON.stringify(AST, null, 2));
 ```
 <details>
