@@ -32,6 +32,24 @@ interface createStrNodeArgs {
   end: number,
 }
 
+export function createBrNode(lineNumber: number, startIndex: number) {
+  return {
+    type: Syntax.Break,
+    raw: "\n",
+    range: [startIndex, startIndex + 1],
+    loc: {
+      start: {
+        line: lineNumber,
+        column: 0
+      },
+      end: {
+        line: lineNumber,
+        column: 1
+      }
+    }
+  };
+}
+
 export function createStrNode(args: createStrNodeArgs): TxtTextNode {
   const {
     src,

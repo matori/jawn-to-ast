@@ -1,6 +1,7 @@
 'use strict';
 import { test } from '@textlint/ast-tester';
 import { isTxtAST } from '@textlint/ast-tester';
+import { TxtNode } from '@textlint/ast-node-types';
 import assert from 'assert';
 import { parse, Syntax } from '../src';
 
@@ -9,6 +10,24 @@ describe('コンプライアンスのテスト', function() {
     const AST = parse('《《こんにちは》》｜世界《せかい》。');
     test(AST);
     assert(isTxtAST(AST));
+  });
+
+  it('連続しない最後の改行の数は合っているか', function() {
+    const AST = parse('テキスト\n');
+    const lastBreaksCount = getLastBreaksCount(AST);
+    assert(lastBreaksCount === 1);
+  });
+
+  it('連続する最後の改行の数は合っているか LF', function() {
+    const AST = parse('テキスト\n\n\n');
+    const lastBreaksCount = getLastBreaksCount(AST);
+    assert(lastBreaksCount === 3);
+  });
+
+  it('連続する最後の改行の数は合っているか CRLF', function() {
+    const AST = parse('テキスト\r\n\r\n\r\n');
+    const lastBreaksCount = getLastBreaksCount(AST);
+    assert(lastBreaksCount === 3);
   });
 
   describe('構文どおりにパースされているか', function() {
@@ -45,3 +64,12 @@ describe('コンプライアンスのテスト', function() {
     });
   });
 });
+
+function getLastBreaksCount(AST: TxtNode): number {
+  return AST.children.reduceRight((acc: number, node: TxtNode) => {
+    if (node.type === Syntax.Break) {
+      acc = acc + 1;
+    }
+    return acc;
+  }, 0);
+}
