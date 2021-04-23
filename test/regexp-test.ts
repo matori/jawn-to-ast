@@ -213,6 +213,13 @@ describe('正規表現のテスト', function() {
           const matchedArray = [...matched];
           assert.strictEqual(matchedArray.length, 0);
         });
+
+        const sample4 = '|《春《は》る》';
+        it(sample4, function() {
+          const matched = sample4.matchAll(rubyPattern);
+          const matchedArray = [...matched];
+          assert.strictEqual(matchedArray.length, 0);
+        });
       });
 
       describe('ルビ親文字がない', function() {

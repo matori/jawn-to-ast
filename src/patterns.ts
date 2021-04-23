@@ -20,7 +20,9 @@ const emphasisPatternBase = [
 ].join('');
 
 const rubyPatternBase = [
-  `(?<rubyBaseRaw>[${rubyBaseStartChars}](?<rubyBase>[^${escapeChars}]+?))`,
+  `(?<rubyBaseRaw>[${rubyBaseStartChars}]`,
+  `(?!${RUBY_TEXT_SYMBOL_START})`,
+  `(?<rubyBase>[^${escapeChars}]+?))`,
   `(?<!${RUBY_TEXT_SYMBOL_START})`,
   RUBY_TEXT_SYMBOL_START,
   `(?<rubyText>.+?)`,
@@ -32,5 +34,5 @@ const rubyPatternBase = [
 export const emphasisPattern = new RegExp(emphasisPatternBase, 'g');
 
 // `｜親文字《ルビ文字》` または `|親文字《ルビ文字》` にマッチする
-// /(?<rubyBaseRaw>[|｜](?<rubyBase>[^|｜]+?))(?<rubyTextRaw>(?<!《)《(?<rubyText>.+?)》)/g
+// /(?<rubyBaseRaw>[|｜](?!《)(?<rubyBase>[^|｜]+?))(?<rubyTextRaw>(?<!《)《(?<rubyText>.+?)》)/g
 export const rubyPattern = new RegExp(rubyPatternBase, 'g');
