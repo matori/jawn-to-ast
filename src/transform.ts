@@ -240,14 +240,15 @@ function createRubyNodes(args: createRubyNodesArgs): Array<TxtNode | TxtTextNode
 
     // 最後にマッチしたものであり、かつ、最終文字列でない場合、
     // 最後にマッチしたものの後から最終文字までのStrノードを作成する
-    if (index === matchedLength - 1 && lastMatchedIndex < endColumn) {
+    const lastMatchedColumn = startColumn + lastMatchedIndex;
+    if (index === matchedLength - 1 && lastMatchedColumn < endColumn) {
       const endText = currentNode.raw.slice(lastMatchedIndex);
       const textNode = createStrNode({
         src: structured,
         raw: endText,
         lineNumber,
-        start: startColumn + lastMatchedIndex,
-        end: startColumn + lastMatchedIndex + endText.length,
+        start: lastMatchedColumn,
+        end: lastMatchedColumn + endText.length,
       });
       result.push(textNode);
     }
