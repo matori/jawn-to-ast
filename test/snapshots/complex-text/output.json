@@ -966,25 +966,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "Str",
-              "raw": "",
-              "value": "",
-              "loc": {
-                "start": {
-                  "line": 4,
-                  "column": 19
-                },
-                "end": {
-                  "line": 4,
-                  "column": 19
-                }
-              },
-              "range": [
-                58,
-                58
-              ]
             }
           ]
         },
