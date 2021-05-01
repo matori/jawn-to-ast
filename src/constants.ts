@@ -18,5 +18,9 @@ export const RUBY_TEXT_SYMBOL_END = '》';
 export const RUBY_TEXT_SYMBOL_ALT_START = '\uF400';
 export const RUBY_TEXT_SYMBOL_ALT_END = '\uF401';
 
+// コメント用
+export const COMMENT_TEXT_SYMBOL_START = '//';
+export const COMMENT_TEXT_SYMBOL_ESCAPE_TARGET = '/';
+
 // エスケープ用の文字
 export const ESCAPE_CHARS = ['|', '｜'];

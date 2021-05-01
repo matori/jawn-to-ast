@@ -1,16 +1,71 @@
 'use strict';
 import { TxtNode, TxtTextNode } from '@textlint/ast-node-types';
 import StructuredSource from 'structured-source';
-import { emphasisPattern, rubyPattern } from './patterns';
+import { commentPattern, emphasisPattern, rubyPattern } from './patterns';
 import { RUBY_TEXT_SYMBOL_ALT_START, RUBY_TEXT_SYMBOL_ALT_END } from './constants';
 import { createEmphasisNode, createRubyNode, createStrNode } from './createNode';
 import { Syntax } from './syntax';
 
 export function transform(node: TxtNode, structured: StructuredSource): TxtNode {
+  const {children} = node;
+  const children0 = children[0];
+
+  if (children.length !== 1 || children0.type !== Syntax.Str) {
+    return node;
+  }
+
+  const newChildren = [];
+  const strRaw = children0.raw;
+  const commentMatched = strRaw.match(commentPattern);
+  if (commentMatched) {
+    const {index} = commentMatched;
+    const commentRaw = commentMatched.groups?.commentRaw || commentMatched[1];
+    const commentText = (commentMatched.groups?.commentText || commentMatched[2]).trim();
+    if (index === 0) {
+      return {
+        type: Syntax.Comment,
+        raw: commentRaw,
+        value: commentText,
+        range: node.range,
+        loc: node.loc,
+      };
+    }
+    const strNode = createStrNode({
+      src: structured,
+      raw: strRaw.slice(0, index),
+      lineNumber: children0.loc.start.line,
+      start: children0.loc.start.column,
+      end: index,
+    });
+    const commentNode = {
+      type: Syntax.Comment,
+      raw: commentRaw,
+      value: commentText,
+      range: [
+        children0.range[0] + index,
+        children0.range[1],
+      ],
+      loc: {
+        start: {
+          line: children0.loc.start.line,
+          column: children0.loc.start.column + index,
+        },
+        end: {
+          line: children0.loc.end.line,
+          column: children0.loc.end.column,
+        },
+      },
+    };
+    newChildren.push(strNode);
+    newChildren.push(commentNode);
+  } else {
+    newChildren.push(children0);
+  }
+
   const emphasisReducer = transformEmphasisReducer.bind(null, node, structured);
   const rubyReducer = transformRubyReducer.bind(null, node, structured);
 
-  const emphasisTransformed = node.children.reduce(emphasisReducer, []);
+  const emphasisTransformed = newChildren.reduce(emphasisReducer, []);
   const rubyTransformed = emphasisTransformed.reduce(rubyReducer, []);
 
   node.children = rubyTransformed;
