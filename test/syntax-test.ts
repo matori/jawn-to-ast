@@ -214,4 +214,33 @@ describe('構文どおりにパースされているか', function() {
     assert(AST.children[0].children[0].children[2].type === Syntax.Str);
     assert(AST.children[0].children[0].children[2].value === 'xyz');
   });
+
+  it('コメントだけの行', function() {
+    const AST = parse('// コメント');
+    assert(AST.children[0].type === Syntax.Comment);
+    assert(AST.children[0].children === undefined);
+    assert(AST.children[0].value === 'コメント');
+  });
+
+  it('行末にあるコメント', function() {
+    const AST = parse('行末。 // コメント');
+    assert(AST.children[0].type === Syntax.Paragraph);
+    assert(AST.children[0].children.length === 2);
+    assert(AST.children[0].children[0].type === Syntax.Str);
+    assert(AST.children[0].children[0].value === '行末。');
+    assert(AST.children[0].children[0].loc.start.column === 0);
+    assert(AST.children[0].children[0].loc.end.column === 3);
+    assert(AST.children[0].children[1].type === Syntax.Comment);
+    assert(AST.children[0].children[1].value === 'コメント');
+    assert(AST.children[0].children[1].loc.start.column === 3);
+    assert(AST.children[0].children[1].loc.end.column === 11);
+  });
+
+  it('エスケープされたコメント', function() {
+    const AST = parse('|// コメント');
+    assert(AST.children[0].type === Syntax.Paragraph);
+    assert(AST.children[0].children.length === 1);
+    assert(AST.children[0].children[0].type === Syntax.Str);
+    assert(AST.children[0].children[0].value === '// コメント');
+  });
 });

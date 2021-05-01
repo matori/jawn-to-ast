@@ -1,9 +1,9 @@
 {
   "type": "Document",
-  "raw": "《《こんにちは》》｜開発者《デベロッパー》さん。\nもう｜春《はる》ですね。\n\n《《｜新《あたら》しい｜季節《きせつ》》》はいつでも楽しいものです。\n\nそうですか、｜夏《なつ》がお好きですか。\nそちらは《《まだ先ですね》》\n\n｜秋《あき》も待ち遠しいものです。\n|冬《ふゆ》は｜《《お嫌い》》なのですね。\n｜残念｜《ざんねん》です。\n\n｜敬具《けいぐ》\n",
+  "raw": "// 強調とルビ\n《《こんにちは》》｜開発者《デベロッパー》さん。\nもう｜春《はる》ですね。\n\n// 強調内ルビチェック\n《《｜新《あたら》しい｜季節《きせつ》》》はいつでも楽しいものです。\n\n// 強調とルビ\nそうですか、｜夏《なつ》がお好きですか。\nそちらは《《まだ先ですね》》\n\n// エスケープ\n｜秋《あき》も待ち遠しいものです。\n|冬《ふゆ》は｜《《お嫌い》》なのですね。\n｜残念｜《ざんねん》です。\n\n｜敬具《けいぐ》\n",
   "range": [
     0,
-    176
+    216
   ],
   "loc": {
     "start": {
@@ -11,17 +11,18 @@
       "column": 0
     },
     "end": {
-      "line": 14,
+      "line": 18,
       "column": 0
     }
   },
   "children": [
     {
-      "type": "Paragraph",
-      "raw": "《《こんにちは》》｜開発者《デベロッパー》さん。",
+      "type": "Comment",
+      "raw": "// 強調とルビ",
+      "value": "強調とルビ",
       "range": [
         0,
-        24
+        8
       ],
       "loc": {
         "start": {
@@ -30,6 +31,43 @@
         },
         "end": {
           "line": 1,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        8,
+        9
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 8
+        },
+        "end": {
+          "line": 1,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "《《こんにちは》》｜開発者《デベロッパー》さん。",
+      "range": [
+        9,
+        33
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
           "column": 24
         }
       },
@@ -39,17 +77,17 @@
           "raw": "《《こんにちは》》",
           "loc": {
             "start": {
-              "line": 1,
+              "line": 2,
               "column": 0
             },
             "end": {
-              "line": 1,
+              "line": 2,
               "column": 9
             }
           },
           "range": [
-            0,
-            9
+            9,
+            18
           ],
           "children": [
             {
@@ -58,17 +96,17 @@
               "value": "こんにちは",
               "loc": {
                 "start": {
-                  "line": 1,
+                  "line": 2,
                   "column": 2
                 },
                 "end": {
-                  "line": 1,
+                  "line": 2,
                   "column": 7
                 }
               },
               "range": [
-                2,
-                7
+                11,
+                16
               ]
             }
           ]
@@ -78,17 +116,17 @@
           "raw": "｜開発者《デベロッパー》",
           "loc": {
             "start": {
-              "line": 1,
+              "line": 2,
               "column": 9
             },
             "end": {
-              "line": 1,
+              "line": 2,
               "column": 21
             }
           },
           "range": [
-            9,
-            21
+            18,
+            30
           ],
           "children": [
             {
@@ -96,17 +134,17 @@
               "raw": "｜開発者",
               "loc": {
                 "start": {
-                  "line": 1,
+                  "line": 2,
                   "column": 9
                 },
                 "end": {
-                  "line": 1,
+                  "line": 2,
                   "column": 13
                 }
               },
               "range": [
-                9,
-                13
+                18,
+                22
               ],
               "children": [
                 {
@@ -115,17 +153,17 @@
                   "value": "開発者",
                   "loc": {
                     "start": {
-                      "line": 1,
+                      "line": 2,
                       "column": 10
                     },
                     "end": {
-                      "line": 1,
+                      "line": 2,
                       "column": 13
                     }
                   },
                   "range": [
-                    10,
-                    13
+                    19,
+                    22
                   ]
                 }
               ]
@@ -135,17 +173,17 @@
               "raw": "《",
               "loc": {
                 "start": {
-                  "line": 1,
+                  "line": 2,
                   "column": 13
                 },
                 "end": {
-                  "line": 1,
+                  "line": 2,
                   "column": 14
                 }
               },
               "range": [
-                13,
-                14
+                22,
+                23
               ],
               "children": [
                 {
@@ -154,17 +192,17 @@
                   "value": "《",
                   "loc": {
                     "start": {
-                      "line": 1,
+                      "line": 2,
                       "column": 13
                     },
                     "end": {
-                      "line": 1,
+                      "line": 2,
                       "column": 14
                     }
                   },
                   "range": [
-                    13,
-                    14
+                    22,
+                    23
                   ]
                 }
               ]
@@ -174,17 +212,17 @@
               "raw": "デベロッパー",
               "loc": {
                 "start": {
-                  "line": 1,
+                  "line": 2,
                   "column": 14
                 },
                 "end": {
-                  "line": 1,
+                  "line": 2,
                   "column": 20
                 }
               },
               "range": [
-                14,
-                20
+                23,
+                29
               ],
               "children": [
                 {
@@ -193,17 +231,17 @@
                   "value": "デベロッパー",
                   "loc": {
                     "start": {
-                      "line": 1,
+                      "line": 2,
                       "column": 14
                     },
                     "end": {
-                      "line": 1,
+                      "line": 2,
                       "column": 20
                     }
                   },
                   "range": [
-                    14,
-                    20
+                    23,
+                    29
                   ]
                 }
               ]
@@ -213,17 +251,17 @@
               "raw": "》",
               "loc": {
                 "start": {
-                  "line": 1,
+                  "line": 2,
                   "column": 20
                 },
                 "end": {
-                  "line": 1,
+                  "line": 2,
                   "column": 21
                 }
               },
               "range": [
-                20,
-                21
+                29,
+                30
               ],
               "children": [
                 {
@@ -232,17 +270,17 @@
                   "value": "》",
                   "loc": {
                     "start": {
-                      "line": 1,
+                      "line": 2,
                       "column": 20
                     },
                     "end": {
-                      "line": 1,
+                      "line": 2,
                       "column": 21
                     }
                   },
                   "range": [
-                    20,
-                    21
+                    29,
+                    30
                   ]
                 }
               ]
@@ -255,17 +293,17 @@
           "value": "さん。",
           "loc": {
             "start": {
-              "line": 1,
+              "line": 2,
               "column": 21
             },
             "end": {
-              "line": 1,
+              "line": 2,
               "column": 24
             }
           },
           "range": [
-            21,
-            24
+            30,
+            33
           ]
         }
       ]
@@ -275,16 +313,16 @@
       "raw": "\n",
       "value": "\n",
       "range": [
-        24,
-        25
+        33,
+        34
       ],
       "loc": {
         "start": {
-          "line": 1,
+          "line": 2,
           "column": 24
         },
         "end": {
-          "line": 1,
+          "line": 2,
           "column": 25
         }
       }
@@ -293,16 +331,16 @@
       "type": "Paragraph",
       "raw": "もう｜春《はる》ですね。",
       "range": [
-        25,
-        37
+        34,
+        46
       ],
       "loc": {
         "start": {
-          "line": 2,
+          "line": 3,
           "column": 0
         },
         "end": {
-          "line": 2,
+          "line": 3,
           "column": 12
         }
       },
@@ -313,17 +351,17 @@
           "value": "もう",
           "loc": {
             "start": {
-              "line": 2,
+              "line": 3,
               "column": 0
             },
             "end": {
-              "line": 2,
+              "line": 3,
               "column": 2
             }
           },
           "range": [
-            25,
-            27
+            34,
+            36
           ]
         },
         {
@@ -331,17 +369,17 @@
           "raw": "｜春《はる》",
           "loc": {
             "start": {
-              "line": 2,
+              "line": 3,
               "column": 2
             },
             "end": {
-              "line": 2,
+              "line": 3,
               "column": 8
             }
           },
           "range": [
-            27,
-            33
+            36,
+            42
           ],
           "children": [
             {
@@ -349,17 +387,17 @@
               "raw": "｜春",
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 3,
                   "column": 2
                 },
                 "end": {
-                  "line": 2,
+                  "line": 3,
                   "column": 4
                 }
               },
               "range": [
-                27,
-                29
+                36,
+                38
               ],
               "children": [
                 {
@@ -368,17 +406,17 @@
                   "value": "春",
                   "loc": {
                     "start": {
-                      "line": 2,
+                      "line": 3,
                       "column": 3
                     },
                     "end": {
-                      "line": 2,
+                      "line": 3,
                       "column": 4
                     }
                   },
                   "range": [
-                    28,
-                    29
+                    37,
+                    38
                   ]
                 }
               ]
@@ -388,17 +426,17 @@
               "raw": "《",
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 3,
                   "column": 4
                 },
                 "end": {
-                  "line": 2,
+                  "line": 3,
                   "column": 5
                 }
               },
               "range": [
-                29,
-                30
+                38,
+                39
               ],
               "children": [
                 {
@@ -407,17 +445,17 @@
                   "value": "《",
                   "loc": {
                     "start": {
-                      "line": 2,
+                      "line": 3,
                       "column": 4
                     },
                     "end": {
-                      "line": 2,
+                      "line": 3,
                       "column": 5
                     }
                   },
                   "range": [
-                    29,
-                    30
+                    38,
+                    39
                   ]
                 }
               ]
@@ -427,17 +465,17 @@
               "raw": "はる",
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 3,
                   "column": 5
                 },
                 "end": {
-                  "line": 2,
+                  "line": 3,
                   "column": 7
                 }
               },
               "range": [
-                30,
-                32
+                39,
+                41
               ],
               "children": [
                 {
@@ -446,17 +484,17 @@
                   "value": "はる",
                   "loc": {
                     "start": {
-                      "line": 2,
+                      "line": 3,
                       "column": 5
                     },
                     "end": {
-                      "line": 2,
+                      "line": 3,
                       "column": 7
                     }
                   },
                   "range": [
-                    30,
-                    32
+                    39,
+                    41
                   ]
                 }
               ]
@@ -466,17 +504,17 @@
               "raw": "》",
               "loc": {
                 "start": {
-                  "line": 2,
+                  "line": 3,
                   "column": 7
                 },
                 "end": {
-                  "line": 2,
+                  "line": 3,
                   "column": 8
                 }
               },
               "range": [
-                32,
-                33
+                41,
+                42
               ],
               "children": [
                 {
@@ -485,17 +523,17 @@
                   "value": "》",
                   "loc": {
                     "start": {
-                      "line": 2,
+                      "line": 3,
                       "column": 7
                     },
                     "end": {
-                      "line": 2,
+                      "line": 3,
                       "column": 8
                     }
                   },
                   "range": [
-                    32,
-                    33
+                    41,
+                    42
                   ]
                 }
               ]
@@ -508,17 +546,17 @@
           "value": "ですね。",
           "loc": {
             "start": {
-              "line": 2,
+              "line": 3,
               "column": 8
             },
             "end": {
-              "line": 2,
+              "line": 3,
               "column": 12
             }
           },
           "range": [
-            33,
-            37
+            42,
+            46
           ]
         }
       ]
@@ -528,16 +566,16 @@
       "raw": "\n",
       "value": "\n",
       "range": [
-        37,
-        38
+        46,
+        47
       ],
       "loc": {
         "start": {
-          "line": 2,
+          "line": 3,
           "column": 12
         },
         "end": {
-          "line": 2,
+          "line": 3,
           "column": 13
         }
       }
@@ -546,17 +584,55 @@
       "type": "Break",
       "raw": "\n",
       "range": [
-        38,
-        39
+        47,
+        48
       ],
       "loc": {
         "start": {
-          "line": 3,
+          "line": 4,
           "column": 0
         },
         "end": {
-          "line": 3,
+          "line": 4,
           "column": 1
+        }
+      }
+    },
+    {
+      "type": "Comment",
+      "raw": "// 強調内ルビチェック",
+      "value": "強調内ルビチェック",
+      "range": [
+        48,
+        60
+      ],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 12
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        60,
+        61
+      ],
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 12
+        },
+        "end": {
+          "line": 5,
+          "column": 13
         }
       }
     },
@@ -564,16 +640,16 @@
       "type": "Paragraph",
       "raw": "《《｜新《あたら》しい｜季節《きせつ》》》はいつでも楽しいものです。",
       "range": [
-        39,
-        73
+        61,
+        95
       ],
       "loc": {
         "start": {
-          "line": 4,
+          "line": 6,
           "column": 0
         },
         "end": {
-          "line": 4,
+          "line": 6,
           "column": 34
         }
       },
@@ -583,17 +659,17 @@
           "raw": "《《｜新《あたら》しい｜季節《きせつ》》》",
           "loc": {
             "start": {
-              "line": 4,
+              "line": 6,
               "column": 0
             },
             "end": {
-              "line": 4,
+              "line": 6,
               "column": 21
             }
           },
           "range": [
-            39,
-            60
+            61,
+            82
           ],
           "children": [
             {
@@ -601,17 +677,17 @@
               "raw": "｜新《あたら》",
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 6,
                   "column": 2
                 },
                 "end": {
-                  "line": 4,
+                  "line": 6,
                   "column": 9
                 }
               },
               "range": [
-                41,
-                48
+                63,
+                70
               ],
               "children": [
                 {
@@ -619,17 +695,17 @@
                   "raw": "｜新",
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 6,
                       "column": 2
                     },
                     "end": {
-                      "line": 4,
+                      "line": 6,
                       "column": 4
                     }
                   },
                   "range": [
-                    41,
-                    43
+                    63,
+                    65
                   ],
                   "children": [
                     {
@@ -638,17 +714,17 @@
                       "value": "新",
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 6,
                           "column": 3
                         },
                         "end": {
-                          "line": 4,
+                          "line": 6,
                           "column": 4
                         }
                       },
                       "range": [
-                        42,
-                        43
+                        64,
+                        65
                       ]
                     }
                   ]
@@ -658,17 +734,17 @@
                   "raw": "《",
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 6,
                       "column": 4
                     },
                     "end": {
-                      "line": 4,
+                      "line": 6,
                       "column": 5
                     }
                   },
                   "range": [
-                    43,
-                    44
+                    65,
+                    66
                   ],
                   "children": [
                     {
@@ -677,17 +753,17 @@
                       "value": "《",
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 6,
                           "column": 4
                         },
                         "end": {
-                          "line": 4,
+                          "line": 6,
                           "column": 5
                         }
                       },
                       "range": [
-                        43,
-                        44
+                        65,
+                        66
                       ]
                     }
                   ]
@@ -697,17 +773,17 @@
                   "raw": "あたら",
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 6,
                       "column": 5
                     },
                     "end": {
-                      "line": 4,
+                      "line": 6,
                       "column": 8
                     }
                   },
                   "range": [
-                    44,
-                    47
+                    66,
+                    69
                   ],
                   "children": [
                     {
@@ -716,17 +792,17 @@
                       "value": "あたら",
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 6,
                           "column": 5
                         },
                         "end": {
-                          "line": 4,
+                          "line": 6,
                           "column": 8
                         }
                       },
                       "range": [
-                        44,
-                        47
+                        66,
+                        69
                       ]
                     }
                   ]
@@ -736,17 +812,17 @@
                   "raw": "》",
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 6,
                       "column": 8
                     },
                     "end": {
-                      "line": 4,
+                      "line": 6,
                       "column": 9
                     }
                   },
                   "range": [
-                    47,
-                    48
+                    69,
+                    70
                   ],
                   "children": [
                     {
@@ -755,17 +831,17 @@
                       "value": "》",
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 6,
                           "column": 8
                         },
                         "end": {
-                          "line": 4,
+                          "line": 6,
                           "column": 9
                         }
                       },
                       "range": [
-                        47,
-                        48
+                        69,
+                        70
                       ]
                     }
                   ]
@@ -778,17 +854,17 @@
               "value": "しい",
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 6,
                   "column": 2
                 },
                 "end": {
-                  "line": 4,
+                  "line": 6,
                   "column": 11
                 }
               },
               "range": [
-                41,
-                50
+                63,
+                72
               ]
             },
             {
@@ -796,17 +872,17 @@
               "raw": "｜季節《きせつ》",
               "loc": {
                 "start": {
-                  "line": 4,
+                  "line": 6,
                   "column": 11
                 },
                 "end": {
-                  "line": 4,
+                  "line": 6,
                   "column": 19
                 }
               },
               "range": [
-                50,
-                58
+                72,
+                80
               ],
               "children": [
                 {
@@ -814,17 +890,17 @@
                   "raw": "｜季節",
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 6,
                       "column": 11
                     },
                     "end": {
-                      "line": 4,
+                      "line": 6,
                       "column": 14
                     }
                   },
                   "range": [
-                    50,
-                    53
+                    72,
+                    75
                   ],
                   "children": [
                     {
@@ -833,17 +909,17 @@
                       "value": "季節",
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 6,
                           "column": 12
                         },
                         "end": {
-                          "line": 4,
+                          "line": 6,
                           "column": 14
                         }
                       },
                       "range": [
-                        51,
-                        53
+                        73,
+                        75
                       ]
                     }
                   ]
@@ -853,17 +929,17 @@
                   "raw": "《",
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 6,
                       "column": 14
                     },
                     "end": {
-                      "line": 4,
+                      "line": 6,
                       "column": 15
                     }
                   },
                   "range": [
-                    53,
-                    54
+                    75,
+                    76
                   ],
                   "children": [
                     {
@@ -872,17 +948,17 @@
                       "value": "《",
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 6,
                           "column": 14
                         },
                         "end": {
-                          "line": 4,
+                          "line": 6,
                           "column": 15
                         }
                       },
                       "range": [
-                        53,
-                        54
+                        75,
+                        76
                       ]
                     }
                   ]
@@ -892,17 +968,17 @@
                   "raw": "きせつ",
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 6,
                       "column": 15
                     },
                     "end": {
-                      "line": 4,
+                      "line": 6,
                       "column": 18
                     }
                   },
                   "range": [
-                    54,
-                    57
+                    76,
+                    79
                   ],
                   "children": [
                     {
@@ -911,17 +987,17 @@
                       "value": "きせつ",
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 6,
                           "column": 15
                         },
                         "end": {
-                          "line": 4,
+                          "line": 6,
                           "column": 18
                         }
                       },
                       "range": [
-                        54,
-                        57
+                        76,
+                        79
                       ]
                     }
                   ]
@@ -931,17 +1007,17 @@
                   "raw": "》",
                   "loc": {
                     "start": {
-                      "line": 4,
+                      "line": 6,
                       "column": 18
                     },
                     "end": {
-                      "line": 4,
+                      "line": 6,
                       "column": 19
                     }
                   },
                   "range": [
-                    57,
-                    58
+                    79,
+                    80
                   ],
                   "children": [
                     {
@@ -950,17 +1026,17 @@
                       "value": "》",
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 6,
                           "column": 18
                         },
                         "end": {
-                          "line": 4,
+                          "line": 6,
                           "column": 19
                         }
                       },
                       "range": [
-                        57,
-                        58
+                        79,
+                        80
                       ]
                     }
                   ]
@@ -975,287 +1051,16 @@
           "value": "はいつでも楽しいものです。",
           "loc": {
             "start": {
-              "line": 4,
+              "line": 6,
               "column": 21
             },
             "end": {
-              "line": 4,
+              "line": 6,
               "column": 34
             }
           },
           "range": [
-            60,
-            73
-          ]
-        }
-      ]
-    },
-    {
-      "type": "Break",
-      "raw": "\n",
-      "value": "\n",
-      "range": [
-        73,
-        74
-      ],
-      "loc": {
-        "start": {
-          "line": 4,
-          "column": 34
-        },
-        "end": {
-          "line": 4,
-          "column": 35
-        }
-      }
-    },
-    {
-      "type": "Break",
-      "raw": "\n",
-      "range": [
-        74,
-        75
-      ],
-      "loc": {
-        "start": {
-          "line": 5,
-          "column": 0
-        },
-        "end": {
-          "line": 5,
-          "column": 1
-        }
-      }
-    },
-    {
-      "type": "Paragraph",
-      "raw": "そうですか、｜夏《なつ》がお好きですか。",
-      "range": [
-        75,
-        95
-      ],
-      "loc": {
-        "start": {
-          "line": 6,
-          "column": 0
-        },
-        "end": {
-          "line": 6,
-          "column": 20
-        }
-      },
-      "children": [
-        {
-          "type": "Str",
-          "raw": "そうですか、",
-          "value": "そうですか、",
-          "loc": {
-            "start": {
-              "line": 6,
-              "column": 0
-            },
-            "end": {
-              "line": 6,
-              "column": 6
-            }
-          },
-          "range": [
-            75,
-            81
-          ]
-        },
-        {
-          "type": "Ruby",
-          "raw": "｜夏《なつ》",
-          "loc": {
-            "start": {
-              "line": 6,
-              "column": 6
-            },
-            "end": {
-              "line": 6,
-              "column": 12
-            }
-          },
-          "range": [
-            81,
-            87
-          ],
-          "children": [
-            {
-              "type": "RubyBase",
-              "raw": "｜夏",
-              "loc": {
-                "start": {
-                  "line": 6,
-                  "column": 6
-                },
-                "end": {
-                  "line": 6,
-                  "column": 8
-                }
-              },
-              "range": [
-                81,
-                83
-              ],
-              "children": [
-                {
-                  "type": "Str",
-                  "raw": "夏",
-                  "value": "夏",
-                  "loc": {
-                    "start": {
-                      "line": 6,
-                      "column": 7
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 8
-                    }
-                  },
-                  "range": [
-                    82,
-                    83
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "RubyParenthesis",
-              "raw": "《",
-              "loc": {
-                "start": {
-                  "line": 6,
-                  "column": 8
-                },
-                "end": {
-                  "line": 6,
-                  "column": 9
-                }
-              },
-              "range": [
-                83,
-                84
-              ],
-              "children": [
-                {
-                  "type": "Str",
-                  "raw": "《",
-                  "value": "《",
-                  "loc": {
-                    "start": {
-                      "line": 6,
-                      "column": 8
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 9
-                    }
-                  },
-                  "range": [
-                    83,
-                    84
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "RubyText",
-              "raw": "なつ",
-              "loc": {
-                "start": {
-                  "line": 6,
-                  "column": 9
-                },
-                "end": {
-                  "line": 6,
-                  "column": 11
-                }
-              },
-              "range": [
-                84,
-                86
-              ],
-              "children": [
-                {
-                  "type": "Str",
-                  "raw": "なつ",
-                  "value": "なつ",
-                  "loc": {
-                    "start": {
-                      "line": 6,
-                      "column": 9
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 11
-                    }
-                  },
-                  "range": [
-                    84,
-                    86
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "RubyParenthesis",
-              "raw": "》",
-              "loc": {
-                "start": {
-                  "line": 6,
-                  "column": 11
-                },
-                "end": {
-                  "line": 6,
-                  "column": 12
-                }
-              },
-              "range": [
-                86,
-                87
-              ],
-              "children": [
-                {
-                  "type": "Str",
-                  "raw": "》",
-                  "value": "》",
-                  "loc": {
-                    "start": {
-                      "line": 6,
-                      "column": 11
-                    },
-                    "end": {
-                      "line": 6,
-                      "column": 12
-                    }
-                  },
-                  "range": [
-                    86,
-                    87
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "Str",
-          "raw": "がお好きですか。",
-          "value": "がお好きですか。",
-          "loc": {
-            "start": {
-              "line": 6,
-              "column": 12
-            },
-            "end": {
-              "line": 6,
-              "column": 20
-            }
-          },
-          "range": [
-            87,
+            82,
             95
           ]
         }
@@ -1272,20 +1077,20 @@
       "loc": {
         "start": {
           "line": 6,
-          "column": 20
+          "column": 34
         },
         "end": {
           "line": 6,
-          "column": 21
+          "column": 35
         }
       }
     },
     {
-      "type": "Paragraph",
-      "raw": "そちらは《《まだ先ですね》》",
+      "type": "Break",
+      "raw": "\n",
       "range": [
         96,
-        110
+        97
       ],
       "loc": {
         "start": {
@@ -1294,113 +1099,54 @@
         },
         "end": {
           "line": 7,
-          "column": 14
+          "column": 1
         }
-      },
-      "children": [
-        {
-          "type": "Str",
-          "raw": "そちらは",
-          "value": "そちらは",
-          "loc": {
-            "start": {
-              "line": 7,
-              "column": 0
-            },
-            "end": {
-              "line": 7,
-              "column": 4
-            }
-          },
-          "range": [
-            96,
-            100
-          ]
+      }
+    },
+    {
+      "type": "Comment",
+      "raw": "// 強調とルビ",
+      "value": "強調とルビ",
+      "range": [
+        97,
+        105
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
         },
-        {
-          "type": "Emphasis",
-          "raw": "《《まだ先ですね》》",
-          "loc": {
-            "start": {
-              "line": 7,
-              "column": 4
-            },
-            "end": {
-              "line": 7,
-              "column": 14
-            }
-          },
-          "range": [
-            100,
-            110
-          ],
-          "children": [
-            {
-              "type": "Str",
-              "raw": "まだ先ですね",
-              "value": "まだ先ですね",
-              "loc": {
-                "start": {
-                  "line": 7,
-                  "column": 6
-                },
-                "end": {
-                  "line": 7,
-                  "column": 12
-                }
-              },
-              "range": [
-                102,
-                108
-              ]
-            }
-          ]
+        "end": {
+          "line": 8,
+          "column": 8
         }
-      ]
+      }
     },
     {
       "type": "Break",
       "raw": "\n",
       "value": "\n",
       "range": [
-        110,
-        111
-      ],
-      "loc": {
-        "start": {
-          "line": 7,
-          "column": 14
-        },
-        "end": {
-          "line": 7,
-          "column": 15
-        }
-      }
-    },
-    {
-      "type": "Break",
-      "raw": "\n",
-      "range": [
-        111,
-        112
+        105,
+        106
       ],
       "loc": {
         "start": {
           "line": 8,
-          "column": 0
+          "column": 8
         },
         "end": {
           "line": 8,
-          "column": 1
+          "column": 9
         }
       }
     },
     {
       "type": "Paragraph",
-      "raw": "｜秋《あき》も待ち遠しいものです。",
+      "raw": "そうですか、｜夏《なつ》がお好きですか。",
       "range": [
-        112,
-        129
+        106,
+        126
       ],
       "loc": {
         "start": {
@@ -1409,13 +1155,14 @@
         },
         "end": {
           "line": 9,
-          "column": 17
+          "column": 20
         }
       },
       "children": [
         {
-          "type": "Ruby",
-          "raw": "｜秋《あき》",
+          "type": "Str",
+          "raw": "そうですか、",
+          "value": "そうですか、",
           "loc": {
             "start": {
               "line": 9,
@@ -1427,21 +1174,39 @@
             }
           },
           "range": [
+            106,
+            112
+          ]
+        },
+        {
+          "type": "Ruby",
+          "raw": "｜夏《なつ》",
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 6
+            },
+            "end": {
+              "line": 9,
+              "column": 12
+            }
+          },
+          "range": [
             112,
             118
           ],
           "children": [
             {
               "type": "RubyBase",
-              "raw": "｜秋",
+              "raw": "｜夏",
               "loc": {
                 "start": {
                   "line": 9,
-                  "column": 0
+                  "column": 6
                 },
                 "end": {
                   "line": 9,
-                  "column": 2
+                  "column": 8
                 }
               },
               "range": [
@@ -1451,16 +1216,16 @@
               "children": [
                 {
                   "type": "Str",
-                  "raw": "秋",
-                  "value": "秋",
+                  "raw": "夏",
+                  "value": "夏",
                   "loc": {
                     "start": {
                       "line": 9,
-                      "column": 1
+                      "column": 7
                     },
                     "end": {
                       "line": 9,
-                      "column": 2
+                      "column": 8
                     }
                   },
                   "range": [
@@ -1476,11 +1241,11 @@
               "loc": {
                 "start": {
                   "line": 9,
-                  "column": 2
+                  "column": 8
                 },
                 "end": {
                   "line": 9,
-                  "column": 3
+                  "column": 9
                 }
               },
               "range": [
@@ -1495,11 +1260,11 @@
                   "loc": {
                     "start": {
                       "line": 9,
-                      "column": 2
+                      "column": 8
                     },
                     "end": {
                       "line": 9,
-                      "column": 3
+                      "column": 9
                     }
                   },
                   "range": [
@@ -1511,15 +1276,15 @@
             },
             {
               "type": "RubyText",
-              "raw": "あき",
+              "raw": "なつ",
               "loc": {
                 "start": {
                   "line": 9,
-                  "column": 3
+                  "column": 9
                 },
                 "end": {
                   "line": 9,
-                  "column": 5
+                  "column": 11
                 }
               },
               "range": [
@@ -1529,16 +1294,16 @@
               "children": [
                 {
                   "type": "Str",
-                  "raw": "あき",
-                  "value": "あき",
+                  "raw": "なつ",
+                  "value": "なつ",
                   "loc": {
                     "start": {
                       "line": 9,
-                      "column": 3
+                      "column": 9
                     },
                     "end": {
                       "line": 9,
-                      "column": 5
+                      "column": 11
                     }
                   },
                   "range": [
@@ -1554,11 +1319,11 @@
               "loc": {
                 "start": {
                   "line": 9,
-                  "column": 5
+                  "column": 11
                 },
                 "end": {
                   "line": 9,
-                  "column": 6
+                  "column": 12
                 }
               },
               "range": [
@@ -1573,11 +1338,11 @@
                   "loc": {
                     "start": {
                       "line": 9,
-                      "column": 5
+                      "column": 11
                     },
                     "end": {
                       "line": 9,
-                      "column": 6
+                      "column": 12
                     }
                   },
                   "range": [
@@ -1591,21 +1356,21 @@
         },
         {
           "type": "Str",
-          "raw": "も待ち遠しいものです。",
-          "value": "も待ち遠しいものです。",
+          "raw": "がお好きですか。",
+          "value": "がお好きですか。",
           "loc": {
             "start": {
               "line": 9,
-              "column": 6
+              "column": 12
             },
             "end": {
               "line": 9,
-              "column": 17
+              "column": 20
             }
           },
           "range": [
             118,
-            129
+            126
           ]
         }
       ]
@@ -1615,26 +1380,26 @@
       "raw": "\n",
       "value": "\n",
       "range": [
-        129,
-        130
+        126,
+        127
       ],
       "loc": {
         "start": {
           "line": 9,
-          "column": 17
+          "column": 20
         },
         "end": {
           "line": 9,
-          "column": 18
+          "column": 21
         }
       }
     },
     {
       "type": "Paragraph",
-      "raw": "|冬《ふゆ》は｜《《お嫌い》》なのですね。",
+      "raw": "そちらは《《まだ先ですね》》",
       "range": [
-        130,
-        151
+        127,
+        141
       ],
       "loc": {
         "start": {
@@ -1643,13 +1408,14 @@
         },
         "end": {
           "line": 10,
-          "column": 21
+          "column": 14
         }
       },
       "children": [
         {
-          "type": "Ruby",
-          "raw": "|冬《ふゆ》",
+          "type": "Str",
+          "raw": "そちらは",
+          "value": "そちらは",
           "loc": {
             "start": {
               "line": 10,
@@ -1657,49 +1423,201 @@
             },
             "end": {
               "line": 10,
+              "column": 4
+            }
+          },
+          "range": [
+            127,
+            131
+          ]
+        },
+        {
+          "type": "Emphasis",
+          "raw": "《《まだ先ですね》》",
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 4
+            },
+            "end": {
+              "line": 10,
+              "column": 14
+            }
+          },
+          "range": [
+            131,
+            141
+          ],
+          "children": [
+            {
+              "type": "Str",
+              "raw": "まだ先ですね",
+              "value": "まだ先ですね",
+              "loc": {
+                "start": {
+                  "line": 10,
+                  "column": 6
+                },
+                "end": {
+                  "line": 10,
+                  "column": 12
+                }
+              },
+              "range": [
+                133,
+                139
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        141,
+        142
+      ],
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 14
+        },
+        "end": {
+          "line": 10,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "range": [
+        142,
+        143
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Comment",
+      "raw": "// エスケープ",
+      "value": "エスケープ",
+      "range": [
+        143,
+        151
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 8
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        151,
+        152
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 8
+        },
+        "end": {
+          "line": 12,
+          "column": 9
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "｜秋《あき》も待ち遠しいものです。",
+      "range": [
+        152,
+        169
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 13,
+          "column": 17
+        }
+      },
+      "children": [
+        {
+          "type": "Ruby",
+          "raw": "｜秋《あき》",
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 0
+            },
+            "end": {
+              "line": 13,
               "column": 6
             }
           },
           "range": [
-            130,
-            136
+            152,
+            158
           ],
           "children": [
             {
               "type": "RubyBase",
-              "raw": "|冬",
+              "raw": "｜秋",
               "loc": {
                 "start": {
-                  "line": 10,
+                  "line": 13,
                   "column": 0
                 },
                 "end": {
-                  "line": 10,
+                  "line": 13,
                   "column": 2
                 }
               },
               "range": [
-                130,
-                132
+                152,
+                154
               ],
               "children": [
                 {
                   "type": "Str",
-                  "raw": "冬",
-                  "value": "冬",
+                  "raw": "秋",
+                  "value": "秋",
                   "loc": {
                     "start": {
-                      "line": 10,
+                      "line": 13,
                       "column": 1
                     },
                     "end": {
-                      "line": 10,
+                      "line": 13,
                       "column": 2
                     }
                   },
                   "range": [
-                    131,
-                    132
+                    153,
+                    154
                   ]
                 }
               ]
@@ -1709,17 +1627,17 @@
               "raw": "《",
               "loc": {
                 "start": {
-                  "line": 10,
+                  "line": 13,
                   "column": 2
                 },
                 "end": {
-                  "line": 10,
+                  "line": 13,
                   "column": 3
                 }
               },
               "range": [
-                132,
-                133
+                154,
+                155
               ],
               "children": [
                 {
@@ -1728,56 +1646,56 @@
                   "value": "《",
                   "loc": {
                     "start": {
-                      "line": 10,
+                      "line": 13,
                       "column": 2
                     },
                     "end": {
-                      "line": 10,
+                      "line": 13,
                       "column": 3
                     }
                   },
                   "range": [
-                    132,
-                    133
+                    154,
+                    155
                   ]
                 }
               ]
             },
             {
               "type": "RubyText",
-              "raw": "ふゆ",
+              "raw": "あき",
               "loc": {
                 "start": {
-                  "line": 10,
+                  "line": 13,
                   "column": 3
                 },
                 "end": {
-                  "line": 10,
+                  "line": 13,
                   "column": 5
                 }
               },
               "range": [
-                133,
-                135
+                155,
+                157
               ],
               "children": [
                 {
                   "type": "Str",
-                  "raw": "ふゆ",
-                  "value": "ふゆ",
+                  "raw": "あき",
+                  "value": "あき",
                   "loc": {
                     "start": {
-                      "line": 10,
+                      "line": 13,
                       "column": 3
                     },
                     "end": {
-                      "line": 10,
+                      "line": 13,
                       "column": 5
                     }
                   },
                   "range": [
-                    133,
-                    135
+                    155,
+                    157
                   ]
                 }
               ]
@@ -1787,17 +1705,17 @@
               "raw": "》",
               "loc": {
                 "start": {
-                  "line": 10,
+                  "line": 13,
                   "column": 5
                 },
                 "end": {
-                  "line": 10,
+                  "line": 13,
                   "column": 6
                 }
               },
               "range": [
-                135,
-                136
+                157,
+                158
               ],
               "children": [
                 {
@@ -1806,17 +1724,251 @@
                   "value": "》",
                   "loc": {
                     "start": {
-                      "line": 10,
+                      "line": 13,
                       "column": 5
                     },
                     "end": {
-                      "line": 10,
+                      "line": 13,
                       "column": 6
                     }
                   },
                   "range": [
-                    135,
-                    136
+                    157,
+                    158
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Str",
+          "raw": "も待ち遠しいものです。",
+          "value": "も待ち遠しいものです。",
+          "loc": {
+            "start": {
+              "line": 13,
+              "column": 6
+            },
+            "end": {
+              "line": 13,
+              "column": 17
+            }
+          },
+          "range": [
+            158,
+            169
+          ]
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        169,
+        170
+      ],
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 17
+        },
+        "end": {
+          "line": 13,
+          "column": 18
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "|冬《ふゆ》は｜《《お嫌い》》なのですね。",
+      "range": [
+        170,
+        191
+      ],
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 0
+        },
+        "end": {
+          "line": 14,
+          "column": 21
+        }
+      },
+      "children": [
+        {
+          "type": "Ruby",
+          "raw": "|冬《ふゆ》",
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 0
+            },
+            "end": {
+              "line": 14,
+              "column": 6
+            }
+          },
+          "range": [
+            170,
+            176
+          ],
+          "children": [
+            {
+              "type": "RubyBase",
+              "raw": "|冬",
+              "loc": {
+                "start": {
+                  "line": 14,
+                  "column": 0
+                },
+                "end": {
+                  "line": 14,
+                  "column": 2
+                }
+              },
+              "range": [
+                170,
+                172
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "冬",
+                  "value": "冬",
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 2
+                    }
+                  },
+                  "range": [
+                    171,
+                    172
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "《",
+              "loc": {
+                "start": {
+                  "line": 14,
+                  "column": 2
+                },
+                "end": {
+                  "line": 14,
+                  "column": 3
+                }
+              },
+              "range": [
+                172,
+                173
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "《",
+                  "value": "《",
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 2
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 3
+                    }
+                  },
+                  "range": [
+                    172,
+                    173
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyText",
+              "raw": "ふゆ",
+              "loc": {
+                "start": {
+                  "line": 14,
+                  "column": 3
+                },
+                "end": {
+                  "line": 14,
+                  "column": 5
+                }
+              },
+              "range": [
+                173,
+                175
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "ふゆ",
+                  "value": "ふゆ",
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 3
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 5
+                    }
+                  },
+                  "range": [
+                    173,
+                    175
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "RubyParenthesis",
+              "raw": "》",
+              "loc": {
+                "start": {
+                  "line": 14,
+                  "column": 5
+                },
+                "end": {
+                  "line": 14,
+                  "column": 6
+                }
+              },
+              "range": [
+                175,
+                176
+              ],
+              "children": [
+                {
+                  "type": "Str",
+                  "raw": "》",
+                  "value": "》",
+                  "loc": {
+                    "start": {
+                      "line": 14,
+                      "column": 5
+                    },
+                    "end": {
+                      "line": 14,
+                      "column": 6
+                    }
+                  },
+                  "range": [
+                    175,
+                    176
                   ]
                 }
               ]
@@ -1829,17 +1981,17 @@
           "value": "は《《お嫌い》》なのですね。",
           "loc": {
             "start": {
-              "line": 10,
+              "line": 14,
               "column": 6
             },
             "end": {
-              "line": 10,
+              "line": 14,
               "column": 21
             }
           },
           "range": [
-            136,
-            151
+            176,
+            191
           ]
         }
       ]
@@ -1849,16 +2001,16 @@
       "raw": "\n",
       "value": "\n",
       "range": [
-        151,
-        152
+        191,
+        192
       ],
       "loc": {
         "start": {
-          "line": 10,
+          "line": 14,
           "column": 21
         },
         "end": {
-          "line": 10,
+          "line": 14,
           "column": 22
         }
       }
@@ -1867,16 +2019,16 @@
       "type": "Paragraph",
       "raw": "｜残念｜《ざんねん》です。",
       "range": [
-        152,
-        165
+        192,
+        205
       ],
       "loc": {
         "start": {
-          "line": 11,
+          "line": 15,
           "column": 0
         },
         "end": {
-          "line": 11,
+          "line": 15,
           "column": 13
         }
       },
@@ -1887,17 +2039,17 @@
           "value": "｜残念《ざんねん》です。",
           "loc": {
             "start": {
-              "line": 11,
+              "line": 15,
               "column": 0
             },
             "end": {
-              "line": 11,
+              "line": 15,
               "column": 13
             }
           },
           "range": [
-            152,
-            165
+            192,
+            205
           ]
         }
       ]
@@ -1907,16 +2059,16 @@
       "raw": "\n",
       "value": "\n",
       "range": [
-        165,
-        166
+        205,
+        206
       ],
       "loc": {
         "start": {
-          "line": 11,
+          "line": 15,
           "column": 13
         },
         "end": {
-          "line": 11,
+          "line": 15,
           "column": 14
         }
       }
@@ -1925,16 +2077,16 @@
       "type": "Break",
       "raw": "\n",
       "range": [
-        166,
-        167
+        206,
+        207
       ],
       "loc": {
         "start": {
-          "line": 12,
+          "line": 16,
           "column": 0
         },
         "end": {
-          "line": 12,
+          "line": 16,
           "column": 1
         }
       }
@@ -1943,16 +2095,16 @@
       "type": "Paragraph",
       "raw": "｜敬具《けいぐ》",
       "range": [
-        167,
-        175
+        207,
+        215
       ],
       "loc": {
         "start": {
-          "line": 13,
+          "line": 17,
           "column": 0
         },
         "end": {
-          "line": 13,
+          "line": 17,
           "column": 8
         }
       },
@@ -1962,17 +2114,17 @@
           "raw": "｜敬具《けいぐ》",
           "loc": {
             "start": {
-              "line": 13,
+              "line": 17,
               "column": 0
             },
             "end": {
-              "line": 13,
+              "line": 17,
               "column": 8
             }
           },
           "range": [
-            167,
-            175
+            207,
+            215
           ],
           "children": [
             {
@@ -1980,17 +2132,17 @@
               "raw": "｜敬具",
               "loc": {
                 "start": {
-                  "line": 13,
+                  "line": 17,
                   "column": 0
                 },
                 "end": {
-                  "line": 13,
+                  "line": 17,
                   "column": 3
                 }
               },
               "range": [
-                167,
-                170
+                207,
+                210
               ],
               "children": [
                 {
@@ -1999,17 +2151,17 @@
                   "value": "敬具",
                   "loc": {
                     "start": {
-                      "line": 13,
+                      "line": 17,
                       "column": 1
                     },
                     "end": {
-                      "line": 13,
+                      "line": 17,
                       "column": 3
                     }
                   },
                   "range": [
-                    168,
-                    170
+                    208,
+                    210
                   ]
                 }
               ]
@@ -2019,17 +2171,17 @@
               "raw": "《",
               "loc": {
                 "start": {
-                  "line": 13,
+                  "line": 17,
                   "column": 3
                 },
                 "end": {
-                  "line": 13,
+                  "line": 17,
                   "column": 4
                 }
               },
               "range": [
-                170,
-                171
+                210,
+                211
               ],
               "children": [
                 {
@@ -2038,17 +2190,17 @@
                   "value": "《",
                   "loc": {
                     "start": {
-                      "line": 13,
+                      "line": 17,
                       "column": 3
                     },
                     "end": {
-                      "line": 13,
+                      "line": 17,
                       "column": 4
                     }
                   },
                   "range": [
-                    170,
-                    171
+                    210,
+                    211
                   ]
                 }
               ]
@@ -2058,17 +2210,17 @@
               "raw": "けいぐ",
               "loc": {
                 "start": {
-                  "line": 13,
+                  "line": 17,
                   "column": 4
                 },
                 "end": {
-                  "line": 13,
+                  "line": 17,
                   "column": 7
                 }
               },
               "range": [
-                171,
-                174
+                211,
+                214
               ],
               "children": [
                 {
@@ -2077,17 +2229,17 @@
                   "value": "けいぐ",
                   "loc": {
                     "start": {
-                      "line": 13,
+                      "line": 17,
                       "column": 4
                     },
                     "end": {
-                      "line": 13,
+                      "line": 17,
                       "column": 7
                     }
                   },
                   "range": [
-                    171,
-                    174
+                    211,
+                    214
                   ]
                 }
               ]
@@ -2097,17 +2249,17 @@
               "raw": "》",
               "loc": {
                 "start": {
-                  "line": 13,
+                  "line": 17,
                   "column": 7
                 },
                 "end": {
-                  "line": 13,
+                  "line": 17,
                   "column": 8
                 }
               },
               "range": [
-                174,
-                175
+                214,
+                215
               ],
               "children": [
                 {
@@ -2116,17 +2268,17 @@
                   "value": "》",
                   "loc": {
                     "start": {
-                      "line": 13,
+                      "line": 17,
                       "column": 7
                     },
                     "end": {
-                      "line": 13,
+                      "line": 17,
                       "column": 8
                     }
                   },
                   "range": [
-                    174,
-                    175
+                    214,
+                    215
                   ]
                 }
               ]
@@ -2140,16 +2292,16 @@
       "raw": "\n",
       "value": "\n",
       "range": [
-        175,
-        176
+        215,
+        216
       ],
       "loc": {
         "start": {
-          "line": 13,
+          "line": 17,
           "column": 8
         },
         "end": {
-          "line": 13,
+          "line": 17,
           "column": 9
         }
       }
