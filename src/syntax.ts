@@ -4,6 +4,7 @@ import { ASTNodeTypes } from '@textlint/ast-node-types';
 export const Syntax = {
   Document: ASTNodeTypes.Document,
   Paragraph: ASTNodeTypes.Paragraph,
+  Comment: ASTNodeTypes.Comment,
   // Inline
   Str: ASTNodeTypes.Str,
   Break: ASTNodeTypes.Break,

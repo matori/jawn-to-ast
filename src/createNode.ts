@@ -8,6 +8,7 @@ import {
   RUBY_BASE_SYMBOL_START,
   RUBY_TEXT_SYMBOL_START,
   RUBY_TEXT_SYMBOL_END,
+  COMMENT_TEXT_SYMBOL_ESCAPE_TARGET,
   ESCAPE_CHARS,
 } from './constants';
 
@@ -24,30 +25,30 @@ function createLocation(line: number, columnStart: number, columnEnd: number): T
   };
 }
 
+export function createBrNode(lineNumber: number, startIndex: number) {
+  return {
+    type: Syntax.Break,
+    raw: '\n',
+    range: [startIndex, startIndex + 1],
+    loc: {
+      start: {
+        line: lineNumber,
+        column: 0,
+      },
+      end: {
+        line: lineNumber,
+        column: 1,
+      },
+    },
+  };
+}
+
 interface createStrNodeArgs {
   src: StructuredSource,
   raw: string,
   lineNumber: number,
   start: number,
   end: number,
-}
-
-export function createBrNode(lineNumber: number, startIndex: number) {
-  return {
-    type: Syntax.Break,
-    raw: "\n",
-    range: [startIndex, startIndex + 1],
-    loc: {
-      start: {
-        line: lineNumber,
-        column: 0
-      },
-      end: {
-        line: lineNumber,
-        column: 1
-      }
-    }
-  };
 }
 
 export function createStrNode(args: createStrNodeArgs): TxtTextNode {
@@ -61,8 +62,10 @@ export function createStrNode(args: createStrNodeArgs): TxtTextNode {
   const loc = createLocation(lineNumber, start, end);
   const range: TextNodeRange = src.locationToRange(loc);
   const escapeChars = ESCAPE_CHARS.join('');
-  const regexp = new RegExp(`[${escapeChars}]${RUBY_TEXT_SYMBOL_START}`, 'g');
-  const value = raw.replace(regexp, RUBY_TEXT_SYMBOL_START);
+  const regexpRuby = new RegExp(`[${escapeChars}]${RUBY_TEXT_SYMBOL_START}`, 'g');
+  const regexpComment = new RegExp(`[${escapeChars}]${COMMENT_TEXT_SYMBOL_ESCAPE_TARGET}`, 'g');
+  const replaed = raw.replace(regexpRuby, RUBY_TEXT_SYMBOL_START);
+  const value = replaed.replace(regexpComment, COMMENT_TEXT_SYMBOL_ESCAPE_TARGET);
 
   return {
     type: Syntax.Str,
@@ -142,8 +145,8 @@ export function createRubyNode(args: createRubyNodeArgs): TxtNode {
   const rubyTextRawStart = start + rubyBaseRawLength;
   const rubyTextLength = rubyText.length;
 
-  const rubyTextSymbolStartLength = RUBY_TEXT_SYMBOL_START.length
-  const rubyTextSymbolEndLength = RUBY_TEXT_SYMBOL_END.length
+  const rubyTextSymbolStartLength = RUBY_TEXT_SYMBOL_START.length;
+  const rubyTextSymbolEndLength = RUBY_TEXT_SYMBOL_END.length;
 
   const children: TxtNode[] = [
     createRubyChildNode({

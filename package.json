@@ -1,6 +1,6 @@
 {
   "name": "jawn-to-ast",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Parse JAWN-FS to AST.",
   "author": "matori <pnr.matori@gmail.com>",
   "license": "MIT",

@@ -1,4 +1,4 @@
-import { emphasisPattern, rubyPattern } from '../src/patterns';
+import { emphasisPattern, rubyPattern, commentPattern } from '../src/patterns';
 import assert from 'assert';
 
 describe('正規表現のテスト', function() {
@@ -258,6 +258,90 @@ describe('正規表現のテスト', function() {
         });
       });
     });
+  });
 
+  context('コメント', function() {
+
+    describe('マッチするパターン', function() {
+
+      describe('行頭 //', function() {
+        const sample = '// コメント';
+        it(sample, function() {
+          const matched = sample.match(commentPattern);
+          assert.notStrictEqual(matched, null);
+          assert.strictEqual(matched?.index, 0);
+          assert.strictEqual(matched[1], '// コメント');
+          assert.strictEqual(matched.groups?.commentRaw, '// コメント');
+          assert.strictEqual(matched[2], ' コメント');
+          assert.strictEqual(matched.groups?.commentText, ' コメント');
+        });
+      });
+
+      describe('行頭から空白連続後 //', function() {
+        const sample = '　　　 // コメント';
+        it(sample, function() {
+          const matched = sample.match(commentPattern);
+          assert.notStrictEqual(matched, null);
+          assert.strictEqual(matched?.index, 0);
+          assert.strictEqual(matched[1], '　　　 // コメント');
+          assert.strictEqual(matched.groups?.commentRaw, '　　　 // コメント');
+          assert.strictEqual(matched[2], ' コメント');
+          assert.strictEqual(matched.groups?.commentText, ' コメント');
+        });
+      });
+
+      describe('テキスト後 //', function() {
+        const sample = 'foo// コメント';
+        it(sample, function() {
+          const matched = sample.match(commentPattern);
+          assert.notStrictEqual(matched, null);
+          assert.strictEqual(matched?.index, 3);
+          assert.strictEqual(matched[1], '// コメント');
+          assert.strictEqual(matched.groups?.commentRaw, '// コメント');
+          assert.strictEqual(matched[2], ' コメント');
+          assert.strictEqual(matched.groups?.commentText, ' コメント');
+        });
+      });
+
+      describe('テキストに続く空白後 //', function() {
+        const sample = 'foo　// コメント';
+        it(sample, function() {
+          const matched = sample.match(commentPattern);
+          assert.notStrictEqual(matched, null);
+          assert.strictEqual(matched?.index, 3);
+          assert.strictEqual(matched[1], '　// コメント');
+          assert.strictEqual(matched.groups?.commentRaw, '　// コメント');
+          assert.strictEqual(matched[2], ' コメント');
+          assert.strictEqual(matched.groups?.commentText, ' コメント');
+        });
+      });
+    });
+
+    describe('マッチしないパターン', function() {
+
+      describe('エスケープ（全角）', function() {
+        const sample = '｜// コメント';
+        it(sample, function() {
+          const matched = sample.match(commentPattern);
+          assert.strictEqual(matched, null);
+        });
+      });
+
+      describe('エスケープ（半角）', function() {
+        const sample = '|// コメント';
+        it(sample, function() {
+          const matched = sample.match(commentPattern);
+          assert.strictEqual(matched, null);
+        });
+      });
+
+      describe('二重にエスケープ', function() {
+        const sample = '|/|/ コメント';
+        it(sample, function() {
+          const matched = sample.match(commentPattern);
+          assert.strictEqual(matched, null);
+        });
+      });
+    });
   });
 });

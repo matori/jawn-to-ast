@@ -51,8 +51,7 @@ export function parse(text: string): TxtNode {
     if (node.type !== Syntax.Paragraph) {
       return node;
     }
-    transform(node, structured);
-    return node;
+    return transform(node, structured);
   });
 
   return AST;

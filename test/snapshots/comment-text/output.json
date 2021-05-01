@@ -1,0 +1,191 @@
+{
+  "type": "Document",
+  "raw": "// これはコメントです。\n春夏秋冬。//コメントです。\n\n　//新しいコメント\n",
+  "range": [
+    0,
+    41
+  ],
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 5,
+      "column": 0
+    }
+  },
+  "children": [
+    {
+      "type": "Comment",
+      "raw": "// これはコメントです。",
+      "value": "これはコメントです。",
+      "range": [
+        0,
+        13
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        13,
+        14
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 13
+        },
+        "end": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": "Paragraph",
+      "raw": "春夏秋冬。//コメントです。",
+      "range": [
+        14,
+        28
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 14
+        }
+      },
+      "children": [
+        {
+          "type": "Str",
+          "raw": "春夏秋冬。",
+          "value": "春夏秋冬。",
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 0
+            },
+            "end": {
+              "line": 2,
+              "column": 5
+            }
+          },
+          "range": [
+            14,
+            19
+          ]
+        },
+        {
+          "type": "Comment",
+          "raw": "//コメントです。",
+          "value": "コメントです。",
+          "range": [
+            19,
+            28
+          ],
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 5
+            },
+            "end": {
+              "line": 2,
+              "column": 14
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        28,
+        29
+      ],
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 14
+        },
+        "end": {
+          "line": 2,
+          "column": 15
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "range": [
+        29,
+        30
+      ],
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    },
+    {
+      "type": "Comment",
+      "raw": "　//新しいコメント",
+      "value": "新しいコメント",
+      "range": [
+        30,
+        40
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 10
+        }
+      }
+    },
+    {
+      "type": "Break",
+      "raw": "\n",
+      "value": "\n",
+      "range": [
+        40,
+        41
+      ],
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 10
+        },
+        "end": {
+          "line": 4,
+          "column": 11
+        }
+      }
+    }
+  ]
+}
