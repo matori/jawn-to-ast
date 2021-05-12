@@ -1,6 +1,6 @@
 import { parse } from '../src';
 
-const input = `序云FSです。《《こんにちは》》｜世界《せかい》。`;
+const input = `JAWN-FSです。《《こんにちは》》｜世界《せかい》。`;
 
 const AST = parse(input);
 

@@ -25,11 +25,11 @@ function createLocation(line: number, columnStart: number, columnEnd: number): T
   };
 }
 
-export function createBrNode(lineNumber: number, startIndex: number) {
+export function createBrNode(lineNumber: number, raw: string, startIndex: number) {
   return {
     type: Syntax.Break,
-    raw: '\n',
-    range: [startIndex, startIndex + 1],
+    raw,
+    range: [startIndex, startIndex + raw.length],
     loc: {
       start: {
         line: lineNumber,
@@ -37,7 +37,7 @@ export function createBrNode(lineNumber: number, startIndex: number) {
       },
       end: {
         line: lineNumber,
-        column: 1,
+        column: raw.length,
       },
     },
   };
