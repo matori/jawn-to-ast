@@ -39,7 +39,7 @@ export function parse(text: string): TxtNode {
 
       // 1個足りないはずなので+1する
       if (ASTLastBreaks + 1 === lastBreaks.length) {
-        const node = createBrNode(lastBrNode.loc.end.line + 1, lastBrNode.range[1]);
+        const node = createBrNode(lastBrNode.loc.end.line + 1, lastBreaks[0], lastBrNode.range[1]);
         AST.children.push(node);
       }
     }
