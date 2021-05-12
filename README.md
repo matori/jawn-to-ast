@@ -1,6 +1,6 @@
 # jawn-to-ast
 
-日本のウェブ小説サービスへマルチポストするための基礎構文「[序云FS](https://github.com/matori/jawn-fs)」を、[textlint](https://github.com/textlint/textlint)互換のASTに変換するライブラリです。
+日本のウェブ小説サービスへマルチポストするための基礎構文「[JAWN-FS](https://github.com/matori/jawn-fs)」を、[textlint](https://github.com/textlint/textlint)互換のASTに変換するライブラリです。
 
 ## インストール
 
@@ -24,7 +24,7 @@ const AST = parse(text);
 ```javascript
 const { parse } = require('jawn-to-ast');
 
-const text = '序云FSです。《《こんにちは》》｜世界《せかい》。';
+const text = 'JAWN-FSです。《《こんにちは》》｜世界《せかい》。';
 const AST = parse(text);
 
 // ASTをJSONにして出力
@@ -36,10 +36,10 @@ console.log(JSON.stringify(AST, null, 2));
 ```json
 {
   "type": "Document",
-  "raw": "序云FSです。《《こんにちは》》｜世界《せかい》。",
+  "raw": "JAWN-FSです。《《こんにちは》》｜世界《せかい》。",
   "range": [
     0,
-    25
+    28
   ],
   "loc": {
     "start": {
@@ -48,16 +48,16 @@ console.log(JSON.stringify(AST, null, 2));
     },
     "end": {
       "line": 1,
-      "column": 25
+      "column": 28
     }
   },
   "children": [
     {
       "type": "Paragraph",
-      "raw": "序云FSです。《《こんにちは》》｜世界《せかい》。",
+      "raw": "JAWN-FSです。《《こんにちは》》｜世界《せかい》。",
       "range": [
         0,
-        25
+        28
       ],
       "loc": {
         "start": {
@@ -66,14 +66,14 @@ console.log(JSON.stringify(AST, null, 2));
         },
         "end": {
           "line": 1,
-          "column": 25
+          "column": 28
         }
       },
       "children": [
         {
           "type": "Str",
-          "raw": "序云FSです。",
-          "value": "序云FSです。",
+          "raw": "JAWN-FSです。",
+          "value": "JAWN-FSです。",
           "loc": {
             "start": {
               "line": 1,
@@ -81,12 +81,12 @@ console.log(JSON.stringify(AST, null, 2));
             },
             "end": {
               "line": 1,
-              "column": 7
+              "column": 10
             }
           },
           "range": [
             0,
-            7
+            10
           ]
         },
         {
@@ -95,16 +95,16 @@ console.log(JSON.stringify(AST, null, 2));
           "loc": {
             "start": {
               "line": 1,
-              "column": 7
+              "column": 10
             },
             "end": {
               "line": 1,
-              "column": 16
+              "column": 19
             }
           },
           "range": [
-            7,
-            16
+            10,
+            19
           ],
           "children": [
             {
@@ -114,16 +114,16 @@ console.log(JSON.stringify(AST, null, 2));
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 12
                 },
                 "end": {
                   "line": 1,
-                  "column": 14
+                  "column": 17
                 }
               },
               "range": [
-                9,
-                14
+                12,
+                17
               ]
             }
           ]
@@ -134,16 +134,16 @@ console.log(JSON.stringify(AST, null, 2));
           "loc": {
             "start": {
               "line": 1,
-              "column": 16
+              "column": 19
             },
             "end": {
               "line": 1,
-              "column": 24
+              "column": 27
             }
           },
           "range": [
-            16,
-            24
+            19,
+            27
           ],
           "children": [
             {
@@ -152,16 +152,16 @@ console.log(JSON.stringify(AST, null, 2));
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 16
+                  "column": 19
                 },
                 "end": {
                   "line": 1,
-                  "column": 19
+                  "column": 22
                 }
               },
               "range": [
-                16,
-                19
+                19,
+                22
               ],
               "children": [
                 {
@@ -171,16 +171,16 @@ console.log(JSON.stringify(AST, null, 2));
                   "loc": {
                     "start": {
                       "line": 1,
-                      "column": 17
+                      "column": 20
                     },
                     "end": {
                       "line": 1,
-                      "column": 19
+                      "column": 22
                     }
                   },
                   "range": [
-                    17,
-                    19
+                    20,
+                    22
                   ]
                 }
               ]
@@ -191,16 +191,16 @@ console.log(JSON.stringify(AST, null, 2));
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 19
+                  "column": 22
                 },
                 "end": {
                   "line": 1,
-                  "column": 20
+                  "column": 23
                 }
               },
               "range": [
-                19,
-                20
+                22,
+                23
               ],
               "children": [
                 {
@@ -210,16 +210,16 @@ console.log(JSON.stringify(AST, null, 2));
                   "loc": {
                     "start": {
                       "line": 1,
-                      "column": 19
+                      "column": 22
                     },
                     "end": {
                       "line": 1,
-                      "column": 20
+                      "column": 23
                     }
                   },
                   "range": [
-                    19,
-                    20
+                    22,
+                    23
                   ]
                 }
               ]
@@ -230,16 +230,16 @@ console.log(JSON.stringify(AST, null, 2));
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 20
+                  "column": 23
                 },
                 "end": {
                   "line": 1,
-                  "column": 23
+                  "column": 26
                 }
               },
               "range": [
-                20,
-                23
+                23,
+                26
               ],
               "children": [
                 {
@@ -249,16 +249,16 @@ console.log(JSON.stringify(AST, null, 2));
                   "loc": {
                     "start": {
                       "line": 1,
-                      "column": 20
+                      "column": 23
                     },
                     "end": {
                       "line": 1,
-                      "column": 23
+                      "column": 26
                     }
                   },
                   "range": [
-                    20,
-                    23
+                    23,
+                    26
                   ]
                 }
               ]
@@ -269,16 +269,16 @@ console.log(JSON.stringify(AST, null, 2));
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 23
+                  "column": 26
                 },
                 "end": {
                   "line": 1,
-                  "column": 24
+                  "column": 27
                 }
               },
               "range": [
-                23,
-                24
+                26,
+                27
               ],
               "children": [
                 {
@@ -288,16 +288,16 @@ console.log(JSON.stringify(AST, null, 2));
                   "loc": {
                     "start": {
                       "line": 1,
-                      "column": 23
+                      "column": 26
                     },
                     "end": {
                       "line": 1,
-                      "column": 24
+                      "column": 27
                     }
                   },
                   "range": [
-                    23,
-                    24
+                    26,
+                    27
                   ]
                 }
               ]
@@ -311,23 +311,22 @@ console.log(JSON.stringify(AST, null, 2));
           "loc": {
             "start": {
               "line": 1,
-              "column": 24
+              "column": 27
             },
             "end": {
               "line": 1,
-              "column": 25
+              "column": 28
             }
           },
           "range": [
-            24,
-            25
+            27,
+            28
           ]
         }
       ]
     }
   ]
 }
-
 ```
 
 </details>
